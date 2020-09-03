@@ -1,7 +1,9 @@
-@baseColor :#027381;
+@headerColor :#FFFF;
+@bodyColor:#F3F3F4;
+@iconColor:hsl(201, 85%, 46%);
 
 body{
-    background-color: @baseColor;
+    background-color: @bodyColor;
 }
 *{
     margin: 0;
@@ -11,30 +13,53 @@ body{
 }
 
 .header {
+    position: fixed;
+
+    height: 80px;
+    width: 100%;
+
     display: flex;
     justify-content: space-between;
 
+    background-color: @headerColor;
+
+    border-bottom: 1px solid hsl(0,0%,90%);
+    box-shadow: 0 0 3px hsla(0,0,90%,.8);
+
 
     .header_left_wrap{
-        display: flex;
-        justify-content: ;
-        background-color: #fff;
-
-        width: 400px;
+        :first-child{
+            color: hsl(201, 85%, 46%);
+        }
+        margin-left: 20px;
+        
+        width: 90px;
         height: 80px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+
     }
     .header_right_wrap{
+        margin-right: 20px;
+
+        width: 350px;
+        height: 80px;
+
         display: flex;
-        background-color: #fff;
+        justify-content: space-around;
+        align-items: center;
+
         ul{
             display: flex;
-            li{
-                margin-right: 20px;
-            }
-        }
 
-        width: 500px;
-        height: 80px;
+            li{
+                margin: 14px;
+            }
+            
+        }
     }
 
 }
