@@ -1,0 +1,61 @@
+@categoryListColor:hsl(10, 50%, 73%);
+@postLeftColor:hsl(97, 57%, 49%);
+@postRightColor:hsl(173, 67%, 80%);
+
+
+
+.category-wrap{
+    position: fixed;
+    top: 95px;
+    left: 0;
+
+    width: 19%;
+    height: 1000px;//test
+
+    background-color: @categoryListColor;
+    
+
+    ul{
+
+        li{
+            :hover{
+                background-color: #fff;
+                box-shadow: 0 6px 10px 0 hsla(0,0%,91.8%,.8);
+            }
+            a{
+                
+                height: 54px;
+                position: relative;
+                display: flex;
+                align-items: center;
+                svg{
+                    font-size: 1.8rem;
+                }
+            }
+            
+        }
+    }
+}
+
+.post-wrap{
+    margin-left: 19.5%;
+    margin-right: 3%;
+    margin-top: 95px;
+
+    display: flex;
+    justify-content: space-between;
+
+    .post-left{
+        width: 55%;
+        height: 1000px;//test
+        background-color: @postLeftColor;
+
+
+    }
+
+    .post-right{
+        width: 300px;
+        height: 1000px;//test
+        background-color: @postRightColor;
+    }
+}

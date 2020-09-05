@@ -1,19 +1,15 @@
 @headerColor :#FFFF;
-@bodyColor:#F3F3F4;
 @iconColor:hsl(201, 85%, 46%);
 
-body{
-    background-color: @bodyColor;
-}
-*{
-    margin: 0;
-    padding: 0;
-    
-    list-style: none;
+
+svg{
+    font-size: 1.2rem;
 }
 
 .header {
     position: fixed;
+    top: 0;
+    left: 0;
 
     height: 80px;
     width: 100%;
@@ -30,6 +26,9 @@ body{
     .header_left_wrap{
         :first-child{
             color: hsl(201, 85%, 46%);
+            
+                font-size: 4rem;
+           
         }
         margin-left: 20px;
         
